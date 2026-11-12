@@ -1,53 +1,22 @@
 # Tunnel-Scout
 
-TunnelScout is a fiber-tethered inspection drone for caves and underground mines. A 50 m single-mode
-fiber tether carries control, telemetry and video between the drone and a ground laptop, so it keeps
-working where rock blocks radio. The drone carries a low-light (NoIR) camera with IR lighting, a 360° lidar
-for mapping, time-of-flight collision sensors and gas sensors for checking the air before people go in.
+A drone on a fiber-optic tether for checking out caves and mines. The fiber carries the controls, telemetry and video, so it keeps working underground where radio doesn't. On board: a NoIR camera with IR lights, a 360° lidar for mapping, distance sensors so it doesn't hit walls, and gas sensors to check the air before anyone goes in.
 
-UF Computer Engineering capstone, CEN3907C, Fall 2026. Faculty: Prof. Jeremiah Blanchard. TA: Minh Tran.
-Test site: Warren Cave Nature Preserve (National Speleological Society).
+UF CpE capstone (CEN3907C), Fall 2026, with Prof. Blanchard and our TA Minh. Test site: Warren Cave Nature Preserve.
 
-![First concept sketch, Aug 29](docs/design/2026-08-29_first-concept-sketch.jpg)
+**Team:** Hope Carter (hup) · Alex Hommerding (moon) · Roberto Zaldana-Arguello (royboitoe) · Gabriel Bendix (Gabe)
 
-## Team
+![Drone assembled](project-updates/week-11-nov-02-to-nov-08/2026-11-03_drone-assembled.jpg)
 
-| Name | Discord |
-| --- | --- |
-| Hope Carter | hup |
-| Alexander (Alex) Hommerding | moon |
-| Roberto Zaldana-Arguello | royboitoe |
-| Gabriel Bendix | Gabe |
+## What's in here
 
-## Current hardware
+- `code/`: scripts that run on the Pi (camera stream, distance sensor). See `code/README.md`.
+- `docs/`: the important stuff: how-to doc, Pi pinout, parts and expenses spreadsheet, wiring diagrams.
+- `project-updates/`: one folder per week (week 1 = Aug 24 through week 15 = Dec 3 presentation week), with a file for each day we worked plus that week's pics.
 
-7-inch Readytosky 295 mm frame · 4× EMAX ECO II 2807 motors · HQProp 7×4×3 props ·
-MicoAir743 V2 flight controller + AM32 55A 4-in-1 ESC (ArduCopter) · 6S battery ·
-Raspberry Pi 5 companion computer (MAVProxy) · Pi Camera Module 3 Wide NoIR + 850 nm IR boards ·
-Slamtec RPLIDAR C1 · Adafruit VL53L1X ToF sensors · MQ-9 / MQ-135 gas sensors ·
-fiber media converters + 50 m fiber · QGroundControl on a laptop with an Xbox (now TBS Tango II) controller.
+## Posting an update
 
-## Repo layout
-
-```
-README.md            this file
-code/                scripts that run on the Raspberry Pi (see code/README.md)
-  camera/              ir-cam.py: NoIR camera MJPEG stream
-  sensors/             tof-sensor.py: VL53L1X distance sensor
-docs/
-  how-to/              team How-To Doc (SSH, sensors, camera, MAVLink)
-  parts-and-expenses/  parts and expenses list
-  reports/             semester work report
-  design/              concept sketches, renders and wiring diagrams
-project-updates/     daily updates, one folder per Mon–Sun week (see project-updates/README.md)
-```
-
-## How to post an update
-
-1. Copy [`project-updates/TEMPLATE.md`](project-updates/TEMPLATE.md) into this week's folder as
-   `YYYY-MM-DD.md`. If the file already exists, add your own `## Name` section.
-2. Put photos and files in that week's `assets/` folder as `YYYY-MM-DD_description.ext`
-   (lowercase, dashes, no spaces). Keep photos under 1600 px.
-3. Commit as `update: YYYY-MM-DD <name> <what>`, for example
-   `update: 2026-11-13 Hope tether flight test`, then push.
-4. Every Sunday, someone writes that week's `WEEKLY-SUMMARY.md`.
+1. Copy `project-updates/TEMPLATE.md` into this week's folder as `YYYY-MM-DD.md`. If someone already made today's file, just add your section.
+2. Drop your pics in the same folder as `YYYY-MM-DD_what-it-is.jpg`.
+3. Commit as `update: YYYY-MM-DD <name> <what>` and push.
+4. Someone writes the week's `WEEKLY-SUMMARY.md` on Sunday.

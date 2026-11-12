@@ -1,37 +1,21 @@
-# YYYY-MM-DD (Weekday)
+# Weekday, Mon D
 
-## Summary
+A line or two on what got done today.
 
-One or two sentences on what the team got done today.
+## Your name
 
-## Hope
+- What you did. Link anything you made.
 
-- What you did, specifically. Link outputs, e.g. `[photo](assets/YYYY-MM-DD_description.jpg)` or `[code](../../code/)`.
+## Problems / what's next
 
-## Alex
+- Anything that broke, anything we're waiting on.
 
--
+## Pics & files
 
-## Roberto
+Put photos in this week's folder as `YYYY-MM-DD_what-it-is.jpg`, then show them like this:
 
--
-
-## Gabriel
-
--
-
-<!-- Delete the sections of anyone who didn't work today. -->
-
-## Decisions / blockers
-
-- Decisions made, problems hit, what we're waiting on.
-
-## Photos & files
-
-- `[Short description](assets/YYYY-MM-DD_description.jpg)`
+<!-- ![what it is](YYYY-MM-DD_what-it-is.jpg) -->
 
 ## Sources
 
-- Discord #channel, YYYY-MM-DD HH:MM
-- Drive: `Tunnel Scout/<folder>/<file>`
-- Claude summary: `<filename>.docx`
+- Discord #channel + time, Drive folder, or whatever you're going off
