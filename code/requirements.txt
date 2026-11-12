@@ -1,0 +1,12 @@
+# Python packages for the TunnelScout Raspberry Pi 5 scripts.
+# Install into a virtual environment on the Pi (Raspberry Pi OS blocks system-wide pip):
+#   python3 -m venv ~/tof --system-site-packages
+#   source ~/tof/bin/activate
+#   pip install -r requirements.txt
+#
+# picamera2 (used by camera/ir-cam.py) is NOT installed with pip on the Pi.
+# Install it with apt instead:  sudo apt install -y python3-picamera2
+# The --system-site-packages flag above lets the venv see it.
+
+# sensors/tof-sensor.py: VL53L1X time-of-flight sensor (also pulls in Adafruit Blinka, which provides `board`)
+adafruit-circuitpython-vl53l1x
