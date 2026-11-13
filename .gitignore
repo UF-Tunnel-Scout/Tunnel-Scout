@@ -1,0 +1,25 @@
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments (the Pi uses ~/tof and ~/mavenv; keep local ones out too)
+venv/
+.venv/
+env/
+tof/
+mavenv/
+
+# Build outputs
+build/
+dist/
+*.o
+*.out
+
+# Editor folders
+.vscode/
+.idea/
